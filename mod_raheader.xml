@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+<name>RA Header</name>
+<author>Chris Vaughan</author>
+<creationDate>2012-06-06</creationDate>
+<copyright>Copyright (C) 2012 Ramblers-webs.org.uk</copyright>
+<license>This extension in released under the GNU/GPL License</license>
+<authorEmail>webmaster@ramblers-webs.org.uk</authorEmail>
+<authorUrl>www.ramblers-webs.org.uk</authorUrl>
+<version>1.0</version>
+<description>This module displays fully customizable header module for Ramblers branding</description>
+<files>
+	<filename >mod_raheader.php</filename>
+	<folder module="mod_raheader">tmpl</folder>
+	<folder>css</folder>
+	<filename>index.html</filename>
+</files>
+<config>
+	<fields name="params">
+		<fieldset name="basic">
+			<field name="website_title" type="text" default="Web site title" size="100" label="WEBSITE_TITLE" description="WEBSITE_TITLE_DESC" />
+			<field name="title_color" type="list" default="_blank" label="TITLE_COLOR" description="TITLE_COLOR_DESC" >
+				<option value="pantone0110">PANTONE0110</option>
+				<option value="pantone0159">PANTONE0159</option>
+				<option value="pantone0186">PANTONE0186</option>
+				<option value="pantone0555">PANTONE0555</option>
+				<option value="pantone0583">PANTONE0583</option>
+				<option value="pantone1815">PANTONE1815</option>
+				<option value="pantone4485">PANTONE4485</option>
+				<option value="pantone5565">PANTONE5565</option>
+				<option value="pantone7474">PANTONE7474</option>
+				<option value="Custom">CUSTOM</option>
+			</field>
+			<field name="title_color_value" type="text" default="#000000" size="8" label="TITLE_CUSTOM_COLOR" description="TITLE_CUSTOM_COLOR_DESC" />
+	
+			<field name="website_subtitle" type="text" default="Web site subtitle" size="100" label="WEBSITE_SUBTITLE" description="WEBSITE_SUBTITLE_DESC" />
+			<field name="subtitle_color" type="list" default="_blank" label="SUBTITLE_COLOR" description="SUBTITLE_COLOR_DESC" >
+				<option value="pantone0110">PANTONE0110</option>
+				<option value="pantone0159">PANTONE0159</option>
+				<option value="pantone0186">PANTONE0186</option>
+				<option value="pantone0555">PANTONE0555</option>
+				<option value="pantone0583">PANTONE0583</option>
+				<option value="pantone1815">PANTONE1815</option>
+				<option value="pantone4485">PANTONE4485</option>
+				<option value="pantone5565">PANTONE5565</option>
+				<option value="pantone7474">PANTONE7474</option>
+				<option value="Custom">CUSTOM</option>
+			</field>
+			<field name="subtitle_color_value" type="text" default="#000000" size="8" label="SUBTITLE_CUSTOM_COLOR" description="SUBTITLE_CUSTOM_COLOR_DESC" />
+	
+			<field type="spacer" name="logo" hr="true" />		
+			<field type="spacer" name="logo_section" class="text" label="LOGO_SECTION" />
+		    <field name="logo_image" type="media" directory="" label="LOGO_IMAGE" description="LOGO_IMAGE_DESC" />
+			<field name="logo_width" type="integer" default="91" label="LOGO_WIDTH" description="LOGO_WIDTH_DESC" first="1" last="2000" step="1" />
+			<field name="logo_height" type="integer" default="91" label="LOGO_HEIGHT" description="LOGO_HEIGHT_DESC" first="1" last="200" step="1" />
+		    <field name="logo_url" type="text" default="http://www.ramblers.org.uk/" size="30" label="LOGO_URL" description="LOGO_URL_DESC" />
+			<field name="logo_url_target" type="list" default="_blank" label="LOGO_URL_TARGET" description="LOGO_URL_TARGET_DESC" >
+				<option value="_blank">TARGET_BLANK</option>
+				<option value="_self">TARGET_SELF</option>
+				<option value="_parent">TARGET_PARENT</option>
+				<option value="_top">TARGET_TOP</option>
+			</field>
+			
+			<field type="spacer" name="horrizon" hr="true" />
+			<field type="spacer" name="horizon_section" class="text" label="HORIZON_SECTION" />
+			<field name="horizon_image" type="media" directory="" label="HORIZON_IMAGE" description="HORIZON_IMAGE_DESC"/>
+			<field name="horizon_width" type="integer" default="400" label="HORIZON_WIDTH" description="HORIZON_WIDTH_DESC" first="1" last="2000" step="1" />
+			<field name="horizon_height" type="integer" default="91" label="HORIZON_HEIGHT" description="HORIZON_HEIGHT_DESC" first="1" last="200" step="1" />
+			
+			<field type="spacer" name="spacer2" hr="true" />
+			<field type="spacer" name="background_section" class="text" label="BACKGROUND_SECTION" />
+			<field name="background_color" type="list" default="_blank" label="BACKGROUND_COLOR" description="BACKGROUND_COLOR_DESC" >
+				<option value="pantone0110">PANTONE0110</option>
+				<option value="pantone0159">PANTONE0159</option>
+				<option value="pantone0186">PANTONE0186</option>
+				<option value="pantone0555">PANTONE0555</option>
+				<option value="pantone0583">PANTONE0583</option>
+				<option value="pantone1815">PANTONE1815</option>
+				<option value="pantone4485">PANTONE4485</option>
+				<option value="pantone5565">PANTONE5565</option>
+				<option value="pantone7474">PANTONE7474</option>
+				<option value="white">White</option>
+				<option value="Custom">CUSTOM</option>
+			</field>
+			<field name="background_custom_color" type="text" default="#FFFFFF" size="8" label="BACKGROUND_CUSTOM_COLOR" description="BACKGROUND_CUSTOM_COLOR_DESC" />
+	
+	
+	
+		</fieldset>
+		<fieldset name="advanced">
+			<field name="layout" type="modulelayout" label="JFIELD_ALT_LAYOUT_LABEL" description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+			<field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+			<field name="cache" type="list" default="1" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+				<option value="1">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+			</field>
+			<field name="cache_time" type="text" default="900" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+			<field name="cachemode" type="hidden" default="static">
+				<option value="static"></option>
+			</field>
+	
+		</fieldset>
+		
+
+
+
+	</fields>
+</config>
+</extension>

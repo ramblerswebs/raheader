@@ -1,0 +1,63 @@
+/* RA Header Module */
+/* @module	RA Header */
+/* @author	Chris Vaughan */
+/* @website	http://ramblers-webs.org.uk/ */
+/* @copyright	Copyright (C) 2013 Chris Vaughan webmaster@ramblers-webs.org.uk All rights reserved. */
+
+/* Set whole div that contains header */
+div#jsn-header { width:100%}
+div#jsn-logo { width:100%}
+div#jsn-pos-logo { width:100%}
+div#jsn-modulecontainer { width:100%}
+div#jsn-modulecontainer_inner { width:100%}
+div#jsn-modulecontent { width:100%}
+
+div#ramblersheader {
+     position: relative;
+     width:100%;
+     height:94px;
+}
+
+/* Set web site title line */
+h1#ramblerstitle {
+    left:120px;
+    top:15px;
+    white-space:nowrap;
+    font-size:230%;
+    font-weight: bold ;
+    position:absolute;
+    font-family:  Arial,Tahoma, sans-serif;
+    z-index: 99
+}
+
+/* Set web site title line */
+h2#ramblerssubtitle {
+    left:180px;
+    top:55px;
+    white-space:nowrap;
+    font-size:130%;
+    font-weight: bold ;
+    position:absolute;
+    font-family:  Arial,Tahoma, sans-serif;
+    z-index: 99;
+}
+
+/* Position Logo */
+img#ralogo {
+    position:absolute;
+    left: 10px;
+    top:2px;;
+    z-index:99;
+}
+
+/* Position Horizon image */
+img#rahorizon {
+    position: relative;
+    bottom: 0;
+    z-index:50;
+    float: right;
+    clear: right
+}
+
+/* END of RA Header Section */
+

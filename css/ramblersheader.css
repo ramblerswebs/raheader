@@ -2,16 +2,13 @@
 /* @module	RA Header */
 /* @author	Chris Vaughan */
 /* @website	http://ramblers-webs.org.uk/ */
-/* @copyright	Copyright (C) 2014 Chris Vaughan webmaster@ramblers-webs.org.uk All rights reserved. */
-                                                
-/* Set whole div that contains header */
-div#jsn-header { width:100%}
-div#jsn-logo { width:100%}
-div#jsn-pos-logo { width:100%}
-div#jsn-modulecontainer { width:100%}
-div#jsn-modulecontainer_inner { width:100%}
-div#jsn-modulecontent { width:100%}
+/* @copyright	Copyright (C) 2013 Chris Vaughan webmaster@ramblers-webs.org.uk All rights reserved. */
 
+div#raheader {
+     position: relative;
+     width:100%;
+     height:94px;
+}
 div#ramblersheader {
      position: relative;
      width:100%;
@@ -21,11 +18,12 @@ div#ramblersheader {
 /* Set web site title line */
 h1#ramblerstitle {
     left:120px;
-    top:15px;
+    top:25px;
     white-space:nowrap;
     font-size:230%;
     font-weight: bold ;
-    position:absolute;
+    position: absolute;
+    margin: 0px;
     font-family:  Arial,Tahoma, sans-serif;
     z-index: 99
 }
@@ -33,7 +31,7 @@ h1#ramblerstitle {
 /* Set web site title line */
 h2#ramblerssubtitle {
     left:180px;
-    top:55px;
+    top:25px;
     white-space:nowrap;
     font-size:130%;
     font-weight: bold ;
@@ -48,6 +46,8 @@ img#ralogo {
     left: 10px;
     top:2px;;
     z-index:99;
+width:91px;
+height:91px;
 }
 
 /* Position Horizon image */
@@ -56,7 +56,9 @@ img#rahorizon {
     bottom: 0;
     z-index:50;
     float: right;
-    clear: right
+    clear: right;
+width:400px;
+height:94px;
 }
 
 /* END of RA Header Section */

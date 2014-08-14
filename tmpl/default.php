@@ -11,7 +11,7 @@ defined('_JEXEC') or die('Restricted access');
 // Add a reference to a CSS file
 // The default path is 'media/system/css/'
 
-$document =& JFactory::getDocument();
+$document =JFactory::getDocument();
 $document->addStyleSheet(JURI::base() . 'modules/mod_raheader/css/ramblersheader.css');
 
 $header = '';

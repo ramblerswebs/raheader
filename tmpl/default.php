@@ -95,6 +95,9 @@ function getColor($option, $customvalue) {
         case "Custom" :
             $color = $customvalue;
             break;
+        case "Transparent" :
+            $color = '';
+            break;
         default:
             $color = $customvalue;
             break;

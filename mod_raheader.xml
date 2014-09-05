@@ -70,6 +70,8 @@
 			<field type="spacer" name="spacer2" hr="true" />
 			<field type="spacer" name="background_section" class="text" label="BACKGROUND_SECTION" />
 			<field name="background_color" type="list" default="_blank" label="BACKGROUND_COLOR" description="BACKGROUND_COLOR_DESC" >
+				<option value="Transparent">TRANSPARENT</option>
+				<option value="white">White</option>
 				<option value="pantone0110">PANTONE0110</option>
 				<option value="pantone0159">PANTONE0159</option>
 				<option value="pantone0186">PANTONE0186</option>
@@ -79,7 +81,6 @@
 				<option value="pantone4485">PANTONE4485</option>
 				<option value="pantone5565">PANTONE5565</option>
 				<option value="pantone7474">PANTONE7474</option>
-				<option value="white">White</option>
 				<option value="Custom">CUSTOM</option>
 			</field>
 			<field name="background_custom_color" type="text" default="#FFFFFF" size="8" label="BACKGROUND_CUSTOM_COLOR" description="BACKGROUND_CUSTOM_COLOR_DESC" />

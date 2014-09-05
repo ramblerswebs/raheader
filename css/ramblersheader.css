@@ -25,19 +25,21 @@ h1#ramblerstitle {
     position: absolute;
     margin: 0px;
     font-family:  Arial,Tahoma, sans-serif;
-    z-index: 99
+    z-index: 99;
+    text-shadow: none
 }
 
 /* Set web site title line */
 h2#ramblerssubtitle {
     left:180px;
-    top:25px;
+    top:45px;
     white-space:nowrap;
     font-size:130%;
     font-weight: bold ;
     position:absolute;
     font-family:  Arial,Tahoma, sans-serif;
     z-index: 99;
+    text-shadow: none
 }
 
 /* Position Logo */

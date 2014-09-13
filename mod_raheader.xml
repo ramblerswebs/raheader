@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension type="module" version="2.5" client="site" method="upgrade">
-<name>RA Header</name>
+<extension type="module" version="3.0" client="site" method="upgrade">
+<name>mod_raheader</name>
 <author>Chris Vaughan</author>
-<creationDate>2012-06-06</creationDate>
+<creationDate>2014-09-13</creationDate>
 <copyright>Copyright (C) 2012 Ramblers-webs.org.uk</copyright>
 <license>This extension in released under the GNU/GPL License</license>
 <authorEmail>webmaster@ramblers-webs.org.uk</authorEmail>
 <authorUrl>www.ramblers-webs.org.uk</authorUrl>
-<version>1.0</version>
+<version>1.1.0</version>
 <description>This module displays fully customizable header module for Ramblers branding</description>
 <files>
 	<filename >mod_raheader.php</filename>
@@ -106,5 +106,8 @@
 
 
 	</fields>
-</config>
+	<updateservers>
+		<server type="extension" name="Ramblers Header Module" priority="1">http://updates.ramblers-webs.org.uk/raheader.xml</server>
+	</updateservers>
+	</config>
 </extension>

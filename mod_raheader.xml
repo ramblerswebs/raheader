@@ -9,6 +9,9 @@
 <authorUrl>www.ramblers-webs.org.uk</authorUrl>
 <version>1.1.0</version>
 <description>This module displays fully customizable header module for Ramblers branding</description>
+<updateservers>
+	<server type="extension" name="Ramblers Header Module" priority="1">http://updates.ramblers-webs.org.uk/raheader.xml</server>
+</updateservers>
 <files>
 	<filename >mod_raheader.php</filename>
 	<folder module="mod_raheader">tmpl</folder>
@@ -85,8 +88,6 @@
 			</field>
 			<field name="background_custom_color" type="text" default="#FFFFFF" size="8" label="BACKGROUND_CUSTOM_COLOR" description="BACKGROUND_CUSTOM_COLOR_DESC" />
 	
-	
-	
 		</fieldset>
 		<fieldset name="advanced">
 			<field name="layout" type="modulelayout" label="JFIELD_ALT_LAYOUT_LABEL" description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
@@ -106,8 +107,5 @@
 
 
 	</fields>
-	<updateservers>
-		<server type="extension" name="Ramblers Header Module" priority="1">http://updates.ramblers-webs.org.uk/raheader.xml</server>
-	</updateservers>
 	</config>
 </extension>

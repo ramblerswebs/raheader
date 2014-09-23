@@ -45,18 +45,16 @@ if ($image != '') {
     $target = $params->get('logo_url_target');
     $header.=getImage('ralogo', $image, $width, $height, $url, $target);
 }
-// Horizon
-$image = $params->get('horizon_image');
+// Background image
+$image = $params->get('background_image');
 if ($image != '') {
-    $width = $params->get('horizon_width');
-    $height = $params->get('horizon_height');
-    $url = '';
-    $target = '';
-    $header.=getImage('rahorizon', $image, $width, $height, $url, $target);
+   $text = "div#ramblersheader {background: url(" . $image . ") no-repeat scroll bottom right; background-size:contain;}";
+   $document->addStyleDeclaration($text);
 }
 $header.='</div>';
 
 echo $header;
+ 
 
 // end
 function getColor($option, $customvalue) {

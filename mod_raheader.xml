@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="module" version="3.0" client="site" method="upgrade">
-    <name>mod_raheader</name>
+    <name>RA Header</name>
     <author>Chris Vaughan</author>
     <creationDate>2014-09-13</creationDate>
     <copyright>Copyright (C) 2012 Ramblers-webs.org.uk</copyright>
@@ -54,8 +54,8 @@
                     <option value="Custom">CUSTOM</option>
                 </field>
                 <field name="subtitle_color_value" type="text" default="#000000" size="8" label="SUBTITLE_CUSTOM_COLOR" description="SUBTITLE_CUSTOM_COLOR_DESC" />
-	</fieldset>
-               <fieldset name="Logo">	
+            </fieldset>
+            <fieldset name="logo">	
                    	
                 <field type="spacer" name="logo_section" class="text" label="LOGO_SECTION" />
                 <field name="logo_image" type="media" directory="" label="LOGO_IMAGE" description="LOGO_IMAGE_DESC" />
@@ -66,8 +66,8 @@
                     <option value="_blank">Load in a new window</option>
                     <option value="_top">Load in the full window</option>
                 </field>		
-               </fieldset>	
-               <fieldset name="Background">
+            </fieldset>	
+            <fieldset name="background">
                 <field name="background_color" type="list" default="_blank" label="BACKGROUND_COLOR" description="BACKGROUND_COLOR_DESC" >
                     <option value="Transparent">TRANSPARENT</option>
                     <option value="white">White</option>
@@ -83,26 +83,10 @@
                     <option value="Custom">CUSTOM</option>
                 </field>
                 <field name="background_custom_color" type="text" default="#FFFFFF" size="8" label="BACKGROUND_CUSTOM_COLOR" description="BACKGROUND_CUSTOM_COLOR_DESC" />
-                <field name="background_image" type="media" directory="" label="BACKGROUND_IMAGE" description="BACKGROUND_IMAGE_DESC"/>
+                <field name="horizon_image" type="media" directory="" label="BACKGROUND_IMAGE" description="BACKGROUND_IMAGE_DESC"/>
 		
             </fieldset>
-            <fieldset name="advanced">
-                <field name="layout" type="modulelayout" label="JFIELD_ALT_LAYOUT_LABEL" description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
-                <field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
-                <field name="cache" type="list" default="1" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
-                    <option value="1">JGLOBAL_USE_GLOBAL</option>
-                    <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
-                </field>
-                <field name="cache_time" type="text" default="900" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
-                <field name="cachemode" type="hidden" default="static">
-                    <option value="static"></option>
-                </field>
-	
-            </fieldset>
-		
-
-
-
+         
         </fields>
     </config>
 </extension>

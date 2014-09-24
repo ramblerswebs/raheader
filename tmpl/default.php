@@ -46,7 +46,7 @@ if ($image != '') {
     $header.=getImage('ralogo', $image, $width, $height, $url, $target);
 }
 // Background image
-$image = $params->get('background_image');
+$image = $params->get('horizon_image');
 if ($image != '') {
    $text = "div#ramblersheader {background: url(" . $image . ") no-repeat scroll bottom right; background-size:contain;}";
    $document->addStyleDeclaration($text);

@@ -14,6 +14,7 @@ defined('_JEXEC') or die('Restricted access');
 
 $document = JFactory::getDocument();
 $document->addStyleSheet(JURI::base() . 'modules/mod_raheader/css/ramblersheader.css');
+$background_style = $params->get('background_style');
 
 // create css file with background colour
 $background_color = getColor($params->get('background_color'), $params->get('background_custom_color'));
@@ -23,7 +24,26 @@ if ($background_color != '') {
 }
 // Overall Div
 $header = '';
-$header.='<div id="ramblersheader" >';
+$header.='<div id="ramblersheader" class="ra' . $background_style . '" >';
+// Background image
+$image = $params->get('horizon_image');
+$height = $params->get('header_height');
+if ($image != '') {
+    $text = "div#ramblersheader {background-image: url(" . JURI::base() . $image . "); height:" . $height . "px; }";
+    $document->addStyleDeclaration($text);
+}
+
+// Logo
+$image = $params->get('logo_image');
+if ($image != '') {
+    $width = $params->get('logo_width');
+    $height = $params->get('logo_height');
+    $url = $params->get('logo_url');
+    $target = $params->get('logo_url_target');
+    $header.=getImage('ralogo', $image, $width, $height, $url, $target);
+    $text = "img#ralogo { height:" . $height . "px; }";
+    $document->addStyleDeclaration($text);
+}
 
 // Title
 $website_title = $params->get('website_title');
@@ -36,25 +56,8 @@ $subtitle_color = getColor($params->get('subtitle_color'), $params->get('subtitl
 if ($website_subtitle != '') {
     $header.='<h2 id="ramblerssubtitle" style="color:' . $subtitle_color . '" >' . $website_subtitle . '</h2>';
 }
-// Logo
-$image = $params->get('logo_image');
-if ($image != '') {
-    $width = $params->get('logo_width');
-    $height = $params->get('logo_height');
-    $url = $params->get('logo_url');
-    $target = $params->get('logo_url_target');
-    $header.=getImage('ralogo', $image, $width, $height, $url, $target);
-}
-// Background image
-$image = $params->get('horizon_image');
-if ($image != '') {
-   $text = "div#ramblersheader {background: url(" . $image . ") no-repeat scroll bottom right; background-size:contain;}";
-   $document->addStyleDeclaration($text);
-}
 $header.='</div>';
-
 echo $header;
- 
 
 // end
 function getColor($option, $customvalue) {
@@ -114,5 +117,5 @@ function getImage($id, $image, $width, $height, $url, $target) {
     }
     return $text;
 }
- 
+
 ?>

@@ -4,63 +4,61 @@
 /* @website	http://ramblers-webs.org.uk/ */
 /* @copyright	Copyright (C) 2013 Chris Vaughan webmaster@ramblers-webs.org.uk All rights reserved. */
 
-div#raheader {
-     position: relative;
-     width:100%;
-     height:94px;
-}
+
 div#ramblersheader {
-     position: relative;
-     width:100%;
-     height:94px;
+    position: relative;
+    width:100%;
+    display: inline-block;
 }
 
 /* Set web site title line */
 h1#ramblerstitle {
-    left:120px;
-    top:25px;
-    white-space:nowrap;
+
     font-size:230%;
     font-weight: bold ;
-    position: absolute;
-    margin: 0px;
     font-family:  Arial,Tahoma, sans-serif;
-    z-index: 99;
-    text-shadow: none
+    text-shadow: none;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 120px
 }
 
 /* Set web site title line */
 h2#ramblerssubtitle {
-    left:180px;
-    top:45px;
     white-space:nowrap;
     font-size:130%;
-    font-weight: bold ;
-    position:absolute;
     font-family:  Arial,Tahoma, sans-serif;
-    z-index: 99;
-    text-shadow: none
+
+    text-shadow: none;
+
+    line-height: 100%;
+    margin-top: 5px;
+    margin-left: 160px;
 }
 
 /* Position Logo */
 img#ralogo {
-    position:absolute;
-    left: 10px;
-    top:2px;;
-    z-index:99;
-width:91px;
-height:91px;
+    float: left;
+    margin-left: 10px;
+    margin-right: 15px;
+    border: 0 none;
+    height: auto;
+    max-width: 100%;
+    vertical-align: baseline;
 }
 
-/* Position Horizon image */
-img#rahorizon {
-    position: relative;
-    bottom: 0;
-    z-index:50;
-    float: right;
-    clear: right;
-width:400px;
-height:94px;
+
+div.ra_part {
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-position: right;
+}
+div.ra_fullwidth {
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: bottom;
 }
 
 /* END of RA Header Section */

@@ -25,7 +25,8 @@
     <config>
         <fields name="params">
             <fieldset name="basic">
-                <field name="website_title" type="text" default="Web site title" size="100" label="WEBSITE_TITLE" description="WEBSITE_TITLE_DESC" />
+              <field name="header_height" type="integer" default="94" label="HEADER_HEIGHT" description="HEADER_HEIGHT_DESC" first="70" last="200" step="1" />
+                 <field name="website_title" type="text" default="" size="100" label="WEBSITE_TITLE" description="WEBSITE_TITLE_DESC" />
                 <field name="title_color" type="list" default="_blank" label="TITLE_COLOR" description="TITLE_COLOR_DESC" >
                     <option value="pantone0110">PANTONE0110</option>
                     <option value="pantone0159">PANTONE0159</option>
@@ -40,7 +41,7 @@
                 </field>
                 <field name="title_color_value" type="text" default="#000000" size="8" label="TITLE_CUSTOM_COLOR" description="TITLE_CUSTOM_COLOR_DESC" />
 	
-                <field name="website_subtitle" type="text" default="Web site subtitle" size="100" label="WEBSITE_SUBTITLE" description="WEBSITE_SUBTITLE_DESC" />
+                <field name="website_subtitle" type="text" default="" size="100" label="WEBSITE_SUBTITLE" description="WEBSITE_SUBTITLE_DESC" />
                 <field name="subtitle_color" type="list" default="_blank" label="SUBTITLE_COLOR" description="SUBTITLE_COLOR_DESC" >
                     <option value="pantone0110">PANTONE0110</option>
                     <option value="pantone0159">PANTONE0159</option>
@@ -56,7 +57,6 @@
                 <field name="subtitle_color_value" type="text" default="#000000" size="8" label="SUBTITLE_CUSTOM_COLOR" description="SUBTITLE_CUSTOM_COLOR_DESC" />
             </fieldset>
             <fieldset name="logo">	
-                   	
                 <field type="spacer" name="logo_section" class="text" label="LOGO_SECTION" />
                 <field name="logo_image" type="media" directory="" label="LOGO_IMAGE" description="LOGO_IMAGE_DESC" />
                 <field name="logo_width" type="integer" default="91" label="LOGO_WIDTH" description="LOGO_WIDTH_DESC" first="1" last="2000" step="1" />
@@ -68,7 +68,11 @@
                 </field>		
             </fieldset>	
             <fieldset name="background">
-                <field name="background_color" type="list" default="_blank" label="BACKGROUND_COLOR" description="BACKGROUND_COLOR_DESC" >
+                <field name="background_style" type="list" default="_part" label="Background_Style" description="Background_Style_DESC" >
+                    <option value="_part">Horizon image</option>
+                    <option value="_fullwidth">Full wdith image</option>
+                </field>		
+               <field name="background_color" type="list" default="_blank" label="BACKGROUND_COLOR" description="BACKGROUND_COLOR_DESC" >
                     <option value="Transparent">TRANSPARENT</option>
                     <option value="white">White</option>
                     <option value="pantone0110">PANTONE0110</option>

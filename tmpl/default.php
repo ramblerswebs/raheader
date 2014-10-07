@@ -15,6 +15,9 @@ defined('_JEXEC') or die('Restricted access');
 $document = JFactory::getDocument();
 $document->addStyleSheet(JURI::base() . 'modules/mod_raheader/css/ramblersheader.css');
 $background_style = $params->get('background_style');
+if ($background_style == "") {
+    $background_style = "_part";
+}
 
 // create css file with background colour
 $background_color = getColor($params->get('background_color'), $params->get('background_custom_color'));
@@ -50,7 +53,7 @@ if ($image != '') {
 $website_title = $params->get('website_title');
 $title_color = getColor($params->get('title_color'), $params->get('title_color_value'));
 if ($website_title != '') {
-$header.='<h1 id="ramblerstitle" style="color:' . $title_color . '" >' . $website_title . '</h1>';
+    $header.='<h1 id="ramblerstitle" style="color:' . $title_color . '" >' . $website_title . '</h1>';
 }
 //SubTitle
 $website_subtitle = $params->get('website_subtitle');

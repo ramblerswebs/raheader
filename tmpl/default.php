@@ -22,6 +22,7 @@ if ($background_color != '') {
     $text = "#rt-top {  background-color: " . $background_color . ";}";
     $document->addStyleDeclaration($text);
 }
+
 // Overall Div
 $header = '';
 $header.='<div id="ramblersheader" class="ra' . $background_style . '" >';

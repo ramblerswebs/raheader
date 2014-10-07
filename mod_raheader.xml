@@ -88,7 +88,7 @@
                 </field>
                 <field name="background_custom_color" type="text" default="#FFFFFF" size="8" label="BACKGROUND_CUSTOM_COLOR" description="BACKGROUND_CUSTOM_COLOR_DESC" />
                 <field name="horizon_image" type="media" directory="" label="BACKGROUND_IMAGE" description="BACKGROUND_IMAGE_DESC"/>
-		
+       	
             </fieldset>
          
         </fields>

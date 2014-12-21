@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="module" version="3.0" client="site" method="upgrade">
     <name>RA Header</name>
-    <author>Chris Vaughan</author>
+    <author>Chris Vaughan Derby and South Derbyshire</author>
     <creationDate>2014-09-13</creationDate>
     <copyright>Copyright (C) 2012 Ramblers-webs.org.uk</copyright>
     <license>This extension in released under the GNU/GPL License</license>

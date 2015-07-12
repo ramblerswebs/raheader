@@ -38,13 +38,13 @@ if ($image != '') {
 }
 
 // Logo
-$image = $params->get('logo_image');
-if ($image != '') {
+$limage = $params->get('logo_image');
+if ($limage != '') {
     $width = $params->get('logo_width');
     $height = $params->get('logo_height');
     $url = $params->get('logo_url');
     $target = $params->get('logo_url_target');
-    $header.=getImage('ralogo', $image, $width, $height, $url, $target);
+    $header.=getImage('ralogo', $limage, $width, $height, $url, $target);
     $text = "img#ralogo { height:" . $height . "px; }";
     $document->addStyleDeclaration($text);
 }
@@ -122,5 +122,3 @@ function getImage($id, $image, $width, $height, $url, $target) {
     }
     return $text;
 }
-
-?>

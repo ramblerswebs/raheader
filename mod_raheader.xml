@@ -11,6 +11,7 @@
     <description>This module displays a customizable header module for Ramblers branding</description>
     <updateservers>
         <server type="extension" name="Ramblers Header Module" priority="1">http://updates.ramblers-webs.org.uk/raheader.xml</server>
+        <server type="extension" name="Ramblers Header Module" priority="2">http://79.170.44.77/ramblers-webs.org.uk/updates/raheader.xml</server>
     </updateservers>
     <files>
         <filename >mod_raheader.php</filename>

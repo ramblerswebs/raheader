@@ -2,15 +2,15 @@
 <extension type="module" version="3.0" client="site" method="upgrade">
     <name>RA Header</name>
     <author>Chris Vaughan Derby and South Derbyshire</author>
-    <creationDate>2014-09-13</creationDate>
-    <copyright>Copyright (C) 2012 Ramblers-webs.org.uk</copyright>
+    <creationDate>2015-07-13</creationDate>
+    <copyright>Copyright (C) 2015 Ramblers-webs.org.uk</copyright>
     <license>This extension in released under the GNU/GPL License</license>
     <authorEmail>webmaster@ramblers-webs.org.uk</authorEmail>
     <authorUrl>www.ramblers-webs.org.uk</authorUrl>
-    <version>1.5.0</version>
+    <version>1.6.0</version>
     <description>This module displays a customizable header module for Ramblers branding</description>
     <updateservers>
-        <server type="extension" name="Ramblers Header Module" priority="1">http://79.170.44.77/ramblers-webs.org.uk/updates/raheader.xml</server>
+        <server type="extension" name="Ramblers Header Module" priority="1">https://raw.githubusercontent.com/ramblerswebs/updates/master/updates/raheader.xml</server>
         <server type="extension" name="Ramblers Header Module" priority="2">http://updates.ramblers-webs.org.uk/raheader.xml</server>
     </updateservers>
     <files>

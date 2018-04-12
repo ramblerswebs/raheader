@@ -94,23 +94,24 @@ div.ra_fullwidth {
 }
 @media only screen and (max-width: 768px){
     h1#ramblerstitle {
-        font-size:220%;
+        font-size:180%;
         font-weight: bold ;
         font-family:  Arial,Tahoma, sans-serif;
         text-shadow: none;
+        line-height: 30px;
         margin-top: 5px;
         margin-bottom: 0px;
-        margin-left: 60px
+        margin-left: 55px
     }
     /* Set web site title line */
     h2#ramblerssubtitle {
         white-space:nowrap;
-        font-size:130%;
+        font-size:100%;
         font-family:  Arial,Tahoma, sans-serif;
         text-shadow: none;
         line-height: 100%;
         margin-top: 5px;
-        margin-left: 100px;
+        margin-left: 55px;
     }
     /* Position Logo */
     img#ralogo {

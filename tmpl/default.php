@@ -28,7 +28,7 @@ if ($background_color != '') {
 
 // Overall Div
 $header = '';
-$header.='<div id="ramblersheader" class="ra' . $background_style . '" >';
+$header.='<div id="ramblersheader" class="ra' . $background_style . ' ' . $moduleclass_sfx . '" >';
 // Background image
 $image = $params->get('horizon_image');
 $height = $params->get('header_height');

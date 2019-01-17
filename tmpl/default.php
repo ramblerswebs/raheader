@@ -31,9 +31,10 @@ $header = '';
 $header.='<div id="ramblersheader" class="ra' . $background_style . ' ' . $moduleclass_sfx . '" >';
 // Background image
 $image = $params->get('horizon_image');
-$height = $params->get('header_height');
+$h_height = $params->get('header_height');
+$h_padding = $params->get('header_margin_top');
 if ($image != '') {
-    $text = "div#ramblersheader {background-image: url(" . JURI::base() . $image . "); height:" . $height . "px; }";
+    $text = "div#ramblersheader {background-image: url(" . JURI::base() . $image . "); padding-top:" . $h_padding . "px; height:" . $h_height . "px; }";
     $document->addStyleDeclaration($text);
 }
 
@@ -44,7 +45,8 @@ if ($limage != '') {
     $height = $params->get('logo_height');
     $url = $params->get('logo_url');
     $target = $params->get('logo_url_target');
-    $header.=getImage('ralogo', $limage, $width, $height, $url, $target);
+    $logoMarginTop = $params->get('logo_margin_top');
+    $header.=getImage('ralogo', $limage, $width, $height, $url, $target, $logoMarginTop);
     $text = "img#ralogo { height:" . $height . "px; }";
     $document->addStyleDeclaration($text);
 }
@@ -111,11 +113,11 @@ function getColor($option, $customvalue) {
     return $color;
 }
 
-function getImage($id, $image, $width, $height, $url, $target) {
+function getImage($id, $image, $width, $height, $url, $target, $logoMarginTop) {
 
     $text = "";
     if ($image != '') {
-        $text = '<img id="' . $id . '" alt="Image" src="' . $image . '" height="' . $height . '" width="' . $width . '" />';
+        $text .= '<img style="margin-top: ' . $logoMarginTop . 'px;" id="' . $id . '" alt="Image" src="' . $image . '" height="' . $height . '" width="' . $width . '" />';
         if ($url != '') {
             $text = '<a target="' . $target . '" href="' . $url . '">' . $text . '</a>';
         }

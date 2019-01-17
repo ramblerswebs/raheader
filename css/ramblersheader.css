@@ -58,7 +58,6 @@ div.ra_fullwidth {
         border: 0 none;
         height: auto;
         max-width: 100%;
-        vertical-align: baseline;
     }
 }
 @media only screen and (max-width: 800px){
@@ -89,7 +88,6 @@ div.ra_fullwidth {
         border: 0 none;
         height: auto;
         max-width: 100%;
-        vertical-align: baseline;
     }
 }
 @media only screen and (max-width: 768px){

@@ -10,6 +10,9 @@ div#ramblersheader {
     width:100%;
     display: inline-block;
 }
+div#ramblersheader a{
+    padding-right: 0px;
+}
 
 div.ra_part {
     background-size:contain;

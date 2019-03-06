@@ -74,7 +74,7 @@
                     <option value="_part">Horizon image</option>
                     <option value="_fullwidth">Full width image</option>
                 </field>		
-                <field name="background_color" type="list" default="_blank" label="BACKGROUND_COLOR" description="BACKGROUND_COLOR_DESC" >
+                <field name="background_color" type="list" default="pantone7474" label="BACKGROUND_COLOR" description="BACKGROUND_COLOR_DESC" >
                     <option value="Transparent">TRANSPARENT</option>
                     <option value="white">White</option>
                     <option value="pantone0110">PANTONE0110</option>

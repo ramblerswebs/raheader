@@ -33,6 +33,9 @@ $header.='<div id="ramblersheader" class="ra' . $background_style . ' ' . $modul
 $image = $params->get('horizon_image');
 $h_height = $params->get('header_height');
 $h_padding = $params->get('header_margin_top');
+if ($h_padding == "") {
+    $h_padding = "0";
+}
 if ($image != '') {
     $text = "div#ramblersheader {background-image: url(" . JURI::base() . $image . "); padding-top:" . $h_padding . "px; height:" . $h_height . "px; }";
     $document->addStyleDeclaration($text);

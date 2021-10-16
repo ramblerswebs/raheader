@@ -120,7 +120,7 @@ function getImage($id, $image, $width, $height, $url, $target, $logoMarginTop) {
 
     $text = "";
     if ($image != '') {
-        $text .= '<img style="margin-top: ' . $logoMarginTop . 'px;" id="' . $id . '" alt="Image" src="' . $image . '" height="' . $height . '" width="' . $width . '" />';
+        $text .= '<img style="margin-top: ' . $logoMarginTop . 'px;" id="' . $id . '" alt="Image" src="' . $image . '" height="' . $height . 'px" width="' . $width . 'px" />';
         if ($url != '') {
             $text = '<a target="' . $target . '" href="' . $url . '">' . $text . '</a>';
         }

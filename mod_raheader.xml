@@ -7,7 +7,7 @@
     <license>This extension in released under the GNU/GPL License</license>
     <authorEmail>webmaster@ramblers-webs.org.uk</authorEmail>
     <authorUrl>www.ramblers-webs.org.uk</authorUrl>
-    <version>1.6.7</version>
+    <version>1.6.8</version>
     <description>This module displays a customizable header module for Ramblers branding</description>
     <updateservers>
         <server type="extension" name="Ramblers Header Module" priority="1">https://raw.githubusercontent.com/ramblerswebs/updates/master/updates/raheader.xml</server>

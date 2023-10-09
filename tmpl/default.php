@@ -63,7 +63,7 @@ if (trim($website_title) != '') {
 //SubTitle
 $website_subtitle = $params->get('website_subtitle');
 $subtitle_color = getColor($params->get('subtitle_color'), $params->get('subtitle_color_value'));
-if (trim($website_subtitle) != '') {
+if (trim($website_subtitle ?? '') != '') {
     $header.='<h2 id="ramblerssubtitle" style="color:' . $subtitle_color . '" >' . $website_subtitle . '</h2>';
 }
 $header.='</div>';

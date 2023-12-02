@@ -57,7 +57,7 @@ if ($limage != '') {
 // Title
 $website_title = $params->get('website_title');
 $title_color = getColor($params->get('title_color'), $params->get('title_color_value'));
-if (trim($website_title) != '') {
+if (trim($website_title ?? '') != '') {
     $header.='<h1 id="ramblerstitle" style="color:' . $title_color . '" >' . $website_title . '</h1>';
 }
 //SubTitle
